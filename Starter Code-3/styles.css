@@ -32,22 +32,16 @@ body
   background-color: yellow;
 }
 
-.exercise-1,
-.exercise-2,
-.exercise-3,
-.exercise-4
-{
-
+/* This is to add the space between the boxes */
+.exercise-2, .exercise-3, .exercise-4{
+  margin-top: 20px;
+  position: relative;
 }
 
-.exercise-1 div,
-.exercise-2 div,
-.exercise-3 div,
-.exercise-4 div
-{
 
+.exercise-1 {
+  /* nothing needs to change */
 }
-
 /* Exercise 2 */
 
 .exercise-2
@@ -59,7 +53,9 @@ body
 .exercise-2 .blue,
 .exercise-2 .yellow
 {
-
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
 }
 
 /* Exercise 3 */
@@ -71,13 +67,15 @@ body
 
 .exercise-3 .green
 {
-
+position: absolute;
 }
 
 .exercise-3 .blue,
 .exercise-3 .yellow
 {
-
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* Exercise 4 */
@@ -89,10 +87,12 @@ body
 
 .exercise-4 .blue
 {
-
+  position: fixed;
+  right: 0;
 }
 
 .exercise-4 .yellow
 {
-
+  position: inherit;
+  right: 0;
 }
